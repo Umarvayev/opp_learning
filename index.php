@@ -1,6 +1,6 @@
 <?php
 
-require_once 'bootstrap.php';
+require_once 'config/bootstrap.php';
 
 $posts = Post::getAll();
 
@@ -17,6 +17,7 @@ $posts = Post::getAll();
 
 <body>
     <h1>OOP Blog</h1>
+    <a href="create.php">Create Post</a>
     <ul>
         <?php foreach ($posts as $post) : ?>
         <li>

@@ -1,5 +1,5 @@
 <?php
-require_once 'bootstrap.php';
+require_once 'config/bootstrap.php';
 $post_id = $_GET['id'];
 $post = Post::getById($post_id);
 
